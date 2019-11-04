@@ -36,10 +36,10 @@ class Song
   def self.genre_count 
      genres_to_return = {}
       @@genres.each do |genre|
-      if @@genre_count.has_key?(genre)
+      if genres_to_return[genre]
         genres_to_return[genre] += 1
       else
-        genres_to_return[genre]= 1      
+        genres_to_return[genre] = 1      
     end
     end
     genres_to_return 
