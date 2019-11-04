@@ -42,7 +42,7 @@ class Song
         genres_to_return[genre]= 1      
     end
     end
-    genres_to_return 
+    genres_to_return[genre] 
   end
   
   def self.artist_count 
