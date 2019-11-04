@@ -33,14 +33,17 @@ class Song
   end 
   
   def self.genre_count 
-    @@genres.each do |genre|
-      if genre_count.has_key?(:genre)
-        genre_count[genre] += 1
+     genres_to_return = {}
+      @@genres.each do |genre|
+      if @@genre_count.has_key?(genre)
+        genres_to_return[genre] += 1
       else
-        genre_count[genre] = 1
-      end
+        genres_to_return[genre] = 1      
     end
+    end
+    genres_to_return 
   end
+
       
   
 end 
