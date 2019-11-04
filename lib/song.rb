@@ -36,9 +36,9 @@ class Song
      genres_to_return = {}
       @@genres.each do |genre|
       if @@genre_count.has_key?(genre)
-        genres_to_return[genre] += 1
+        genres_to_return[genre]+= 1
       else
-        genres_to_return[genre] = 1      
+        genres_to_return[genre]= 1      
     end
     end
     genres_to_return 
