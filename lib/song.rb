@@ -48,10 +48,10 @@ class Song
   def self.artist_count 
      artists_to_return = {}
       @@artists.each do |artist|
-      if @@artist_count.has_key?(artist)
+      if artists_to_return[artist]
         artists_to_return[artist] += 1
       else
-        artists_to_return[artist]= 1      
+        artists_to_return[artist] = 1      
     end
     end
   end
