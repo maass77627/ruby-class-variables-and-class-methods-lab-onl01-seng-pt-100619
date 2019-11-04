@@ -28,7 +28,7 @@ class Song
   end
   
   def self.artists 
-   @@artists.include?(artist)
+   @@artists.uniq
 end 
   
 end 
