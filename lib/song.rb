@@ -54,6 +54,7 @@ class Song
         artists_to_return[artist] = 1      
     end
     end
+    artists_to_return
   end
 
 
